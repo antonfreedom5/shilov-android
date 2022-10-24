@@ -7,8 +7,8 @@
 
     <TextView
         android:id="@+id/textItem"
-        android:layout_width="288dp"
-        android:layout_height="56dp"
+        android:layout_width="242dp"
+        android:layout_height="49dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:textSize="20sp"
@@ -21,12 +21,14 @@
 
     <Button
         android:id="@+id/deleteButton"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="69dp"
-        android:layout_height="56dp"
-        app:icon="@android:drawable/ic_delete"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="28dp"
+        android:text="delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

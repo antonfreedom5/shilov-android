@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addItem"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20sp"
-    tools:context=".AddClientFragment">
+    tools:context=".AddOrderFragment">
 
     <TableRow>
         <TextView
             android:layout_weight="0.5"
-            android:text="@string/name"
+            android:text="First name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/nameText"
+            android:id="@+id/firstNameText"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"  />
@@ -22,7 +23,20 @@
     <TableRow>
         <TextView
             android:layout_weight="0.5"
-            android:text="@string/phone"
+            android:text="Last name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/lastNameText"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"  />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_weight="0.5"
+            android:text="Phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -35,25 +49,18 @@
     <TableRow>
         <TextView
             android:layout_weight="0.5"
-            android:text="@string/address"
+            android:text="Note"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <EditText
-            android:id="@+id/addressText"
+            android:id="@+id/noteText"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"  />
     </TableRow>
-    <TableRow android:id="@+id/checkboxContainer">
-        <TextView
-            android:layout_weight="0.5"
-            android:text="@string/products"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </TableRow>
 
     <TableRow>
-        <Button android:id="@+id/addButton" android:text="@string/add"/>
+        <Button android:id="@+id/addButton" android:text="Create"/>
     </TableRow>
 </TableLayout>
